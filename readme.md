@@ -1,6 +1,7 @@
 # Booki
 
-Mon premier projet Web /n
+Mon premier projet Web.
+
 L'objectif est d'intégrer la maquette d'un site web en HTML et CSS.
 
 ## Spécifications techniques
