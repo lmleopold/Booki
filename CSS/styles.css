@@ -1,0 +1,749 @@
+/*
+styles.css
+par Louis-Marie LEOPOLD
+*/
+
+/*ELEMENTS PRINCIPAUX DE LA PAGE////////////////////////////////////////*/
+
+body
+{
+    font-family: 'Raleway', sans-serif;;
+    color: #181818;
+}
+
+#bloc_page
+{
+    margin: auto;
+    max-width: 1920px;
+    padding:0 0 0 50px;
+    background-color: white;    
+}
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.bold
+{
+    font-weight: 700;
+    font-size: 18px;
+
+}
+em
+{
+    font-weight: 700;
+    font-style: normal;
+}
+span
+{
+    font-weight: 700;
+    font-style: normal;
+}
+.thin
+{
+    font-weight: 400;
+}
+h1,h2
+{
+    font-size: 22px;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+.hauteur
+{
+    box-sizing: border-box;
+    height: 50px;
+}
+/*HEADER////////////////////////////////////////////////////////////*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    padding: 0 0 0 20px;
+}
+nav
+{
+    height:100%;
+}
+nav ul
+{
+    height:100%;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+nav ul li
+{    
+    display:flex;
+    align-items: flex-end;  
+}
+nav ul li a
+{
+    flex:1;
+    box-sizing: border-box;
+    width: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    color:#181818;
+    padding-bottom: 20px;
+}
+nav ul li a:hover
+{
+    color:#0065FC;
+    border-top: 4px #0065FC solid;
+}
+#petit_logo
+{
+    height: 30px;/*1*/
+    width: 60px;
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+}
+#petit_logo img
+{
+    width: 155%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: -5px;
+    left: -1px;
+}
+
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    header
+    {
+        height: 140px;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-end;
+        padding: 0;
+        max-width: 100%;
+    }
+    nav 
+    {
+        box-sizing: border-box;
+        width: 100%;        
+        height: 70px;
+    }
+    nav ul li
+    {
+        flex:1;
+    }
+    nav ul li a
+    {
+        border-bottom: #F2F2F2 2px solid;
+        width: 100%;
+    }
+    nav ul li a:hover
+    {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: #0065FC 4px solid;
+    }
+    
+}
+/*SECTION "module de recherche"////////////////////////////////////////////////////////////*/
+/*TITRE*/
+#module_de_recherche
+{
+    padding-top: 50px;
+    
+}
+#module_de_recherche p.thin
+{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+#module_de_recherche h1
+{
+    margin:0;
+}
+/*BARRE DE RECHERCHE*/
+form
+{
+    display: flex;    
+}
+#punaise
+{
+    background-color: #F2F2F2;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+}
+#recherche_ville
+{
+    color:black;
+    padding-left: 23px;
+    border:none;    
+    border-top:2px solid #F2F2F2; 
+    border-bottom: 2px solid #F2F2F2;
+}
+#recherche_ville:focus
+{
+    outline:solid black 2px;
+}
+#rechercher
+{
+    padding: 0 23px;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    background-color: #0065FC;
+}
+#loupe
+{
+    border: none;
+    width: 50px;
+    color: white;
+    border-radius: 20px 20px;
+    background-color: #0065FC;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form button
+{
+    display:none;
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    #bloc_page
+    {
+        padding: 0;
+        min-width:200px;
+    }
+    #module_de_recherche
+    {
+        padding:35px 20px 0 20px;
+    }
+    #rechercher
+    {
+        display: none;
+    }
+    form button
+    {
+        display:contents;
+    }
+}
+/*FILTRES*/
+#Filtres
+{
+    display: flex;
+    align-items:flex-start;
+    margin-top:30px;   
+}
+#Filtres i
+{
+    width:50px;
+    height: 100%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+#Filtres p
+{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    border:2px solid #D9D9D9;
+    border-left:none;
+    border-radius: 0 34px 34px 0;
+    text-transform: capitalize;
+    margin-left: -22px;
+    padding-left: 37px;
+    padding-right: 20px;
+    z-index: 1;
+}
+#Filtres p:hover
+{
+    border:2px solid #DEEBFF;
+    color: #0065FC;
+    border-left:none;
+}
+#Filtres ul
+{
+    display: flex;
+    align-items: center;
+    margin:0;
+    flex:1;
+    row-gap:16px;
+    column-gap: 24px;
+    padding:0;
+    flex-wrap: wrap;
+}
+#Filtres ul li
+{
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+#Filtres H3
+{
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+    margin: 0;
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    #Filtres
+    {
+        flex-direction: column;
+    }
+}
+/*LIGNE "i"*/
+#description
+{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+#alignement
+{
+    display: flex;
+    align-items: flex-start;
+}
+#description i
+{
+    color: #0065FC;
+    border:#D9D9D9 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 23px;
+    width: 23px;
+    border-radius: 11.5px;
+    flex-shrink: 0;
+}
+#description p.thin
+{
+    margin:0;
+    padding:0 0 0 11.5px;
+}
+/*SECTION "Hébergements à Marseille"////////////////////////////////////////////////////////////*/
+#hebergements
+{
+    background-color: #F2F2F2;
+    padding:40px;
+    border-radius:20px;
+}
+#hebergements h2
+{
+    padding-top: 7px;
+    padding-bottom: 23px;
+    margin:0;
+}
+#liste_hebergements
+{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left:0;
+}
+#liste_hebergements li
+{
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    gap: 100px;
+    box-shadow: 0px 2px 8px #D9D9D9;
+}
+#liste_hebergements li:hover
+{
+    box-shadow: 0px 10px 8px #D9D9D9;
+}
+#liste_hebergements p
+{
+    color: #181818;
+    margin:7px 0;
+}
+#liste_hebergements a
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#liste_hebergements img
+{
+    border-radius:20px 20px 0 0;
+    height: 115px;
+    min-width: 235px;
+    object-fit:cover;
+}
+#liste_hebergements .score
+{
+    margin-bottom:6px;
+}
+.score i
+{
+    color: #0065FC;
+}
+.score i.sombre
+{
+    color:#D9D9D9;
+}
+#afficher_plus
+{
+    margin-bottom: 5px;
+    margin-top: 40px;
+    color:#181818;
+}
+@media all and (max-width: 1200px)
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    #hebergements
+    {
+        background-color: white;
+    }
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    #liste_hebergements
+    {
+        gap:10px;
+        flex-direction: column;
+    }
+    #hebergements
+    {
+        border-radius: 0;
+        padding: 40px 20px;
+    }
+    #liste_hebergements img
+    {
+        width:100%
+    }
+}
+/*ENCART "Les plus populaires"////////////////////////////////////////////////////////////*/
+main
+{
+    display: flex;
+    padding-right: 50px;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding:40px;
+    margin:0 0 0 40px;
+    border-radius:20px;
+    height: 100%;
+}
+#entete_aside
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 23px;
+    margin:0;
+}
+#entete_aside h2
+{
+    margin:0;
+}
+#entete_aside i
+{
+    line-height: 21.85px;
+}
+#liste_hebergements_populaires
+{
+    display: flex;
+    min-width: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    gap: 30px;
+    height:100%;
+}
+#liste_hebergements_populaires img
+{
+    border-radius:20px 0 0 20px;
+    min-width: 125px;
+    object-fit:cover;
+}
+#liste_hebergements_populaires li.article a:hover
+{
+    box-shadow: 0px 10px 8px #D9D9D9;
+}
+#liste_hebergements_populaires li.article a
+{
+    box-sizing: border-box;
+    max-width:100%;
+    display:flex;
+    flex-direction:row;
+    height: 144px;
+    max-width: 344px;
+    margin:0;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    color: #181818;
+    box-shadow: 0px 2px 8px #D9D9D9;
+}
+.hebergement_populaire
+{
+    display: flex;
+    box-sizing: border-box;
+    min-width:calc(100% - 125px);
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.hebergement_populaire li.texte
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hebergement_populaire p
+{
+    margin:7px 0;
+}
+@media all and (max-width: 1226px) and (min-width:768px)
+/*pour tous les types d'écran si la largeur de la fenetre 
+est comprise entre 1226 px et 768px alors executer les règles suivantes*/
+{
+    main
+    {
+        flex-direction:column-reverse;
+        padding: 0;
+    }
+    aside
+    {
+        margin:0;        
+        padding:40px 0 40px 40px;
+        margin-right: 40px;
+        border-radius: 0;
+    }
+
+    #liste_hebergements_populaires li.article a
+    {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    #liste_hebergements_populaires img
+    {
+        min-width:50%;
+    }
+    .hebergement_populaire
+    {
+        min-width: 50%;
+    }
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    main
+    {
+        flex-direction:column-reverse;
+        padding: 0;
+    }
+    aside
+    {
+        margin:0;
+        padding:40px 20px;
+        border-radius: 0;
+    }
+
+    #liste_hebergements_populaires li.article a
+    {
+        box-sizing: border-box;
+        max-width: 100%;        
+    }
+    #liste_hebergements_populaires img
+    {
+        width:51%;
+    }
+}
+
+/*SECTION "Activités à Marseille"////////////////////////////////////////////////////////////*/
+
+#activites
+{
+    padding-bottom: 23px;
+}
+#liste_activites
+{
+    display: flex;
+    padding: 0 50px 60px 0;
+    gap: 40px;
+}
+#liste_activites .boite
+{
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+    max-height: 345px;
+    min-width:10px;
+    gap: 40px;    
+}
+.duo
+{
+    flex-direction: column;     
+}
+.boite a
+{
+    display: block;
+}
+.boite figure
+{   
+    margin:0;
+    border-radius:20px;
+    box-shadow: 0px 2px 8px #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+#liste_activites figure img
+{
+    display: block;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    height: 100%;
+    object-fit:cover;
+}
+.grande
+{
+    box-sizing: border-box;
+    height: 100%;
+    max-width: 100%;
+
+}
+.deux_tiers
+{
+    box-sizing: border-box;
+    height: calc(66% - 20px);
+    max-width: 100%;
+}
+.un_tier
+{
+    height:calc(33% - 20px);
+    max-width: 100%;
+}
+.moitie
+{
+    height:calc(50% - 20px);
+    max-width: 100%;
+}
+
+.boite figcaption
+{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 56px;
+    padding-left: 20px;
+    border-radius: 0 0 20px 20px;
+    color: #181818;
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+    #liste_activites
+    {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px 60px 20px;
+    }
+    #activites
+    {
+        padding:0 20px 23px 20px;
+    }
+    #liste_activites .boite
+    {    
+        max-height: 100%;
+    }
+    #liste_activites .duo
+    {
+        gap:20px;
+    }
+    .boite a
+    {
+        flex: 1;
+    }
+    #liste_activites figure img
+    {
+        max-height: 135px;
+    }     
+}
+/*FOOTER////////////////////////////////////////////////////////////*/
+body
+{
+    background-color: #D9D9D9;
+}
+body>div
+{
+    background-color: white;
+}
+footer
+{
+    background-color: #D9D9D9;
+}
+footer>div
+{
+    margin: auto;
+    max-width: 1920px;
+    min-width: 200px;
+    padding:27px 0 27px 70px;
+    background-color: #D9D9D9;
+    display: flex;
+}
+.rubriques_footer
+{
+    flex:1;
+    gap: 26px;
+    
+}
+.rubriques_footer ul
+{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 0;
+}
+@media all and (max-width: 768px) 
+/*pour tous les types d'écran si la largeur de la fenetre 
+ne dépasse pas 768 px alors executer les règles suivantes*/
+{
+        footer>div
+    {
+        flex-direction:column;
+    }
+}
