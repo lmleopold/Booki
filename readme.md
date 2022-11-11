@@ -1,15 +1,31 @@
-# Booki
+# Booki Projet 2 du parcours Développeur web d'OpenClassrooms : Transformer une maquette en site web
+***
+### Compétences évaluées :
+* Présentation du code réalisé et le rendu visuel du site.
 
-Mon premier projet Web.
+## Objectifs
+1. Développer un site proposant le menu de 4 grands restaurants parisiens.
+2. Permettre la réservation en ligne et la composition de menus.
 
-L'objectif est d'intégrer la maquette d'un site web en HTML et CSS.
+## Présentation de Booki
+Reservia est une petite entreprise qui propose à ses usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-## Spécifications techniques
+## Éléments à disposition
+* La maquette desktop et mobile du site.
+* Les images du site avec différents formats.
 
-- Le développement doit se faire en HTML et CSS, sans JavaScript ni framework.
+## Contraintes
+* Le site doit se faire en HTML et CSS sans frameworks.
+* Les icônes proviennent de Font Awesome.
+* Couleurs utilisées : bleu #0065FC, bleu clair #DEEBFF et gris #F2F2F2.
+* Police utilisée : Raleway
+* Le code utilise les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C.
+* Le site doit être compatible avec les dernières versions des navigateurs Chrome et Firefox.
+* Les images doivent être de taille adéquate afin qu'elles impactent le moins possible le temps de chargement de la page.
+* Le code doit être versionné avec Git et doit avoir un repository distant sur Github ou Gitlab.
 
-- La page doit être responsive sur mobile, tablette et desktop (desktop-first).
-
-- La page doit passer la validation W3C
-
-- La page doit être compatible avec les dernières versions de Chrome et Firefox.
+## Fonctionnalités
+* Le champ de recherche doit être un champ de saisie.
+* Chaque carte d’hébergement ou d’activité est cliquable dans son intégralité.
+* Les filtres, bien que non fonctionnels, changent de style au survol.
+* Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page.
