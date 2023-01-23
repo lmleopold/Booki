@@ -648,12 +648,12 @@ ne dépasse pas 768 px alors executer les règles suivantes*/
 .deux_tiers
 {
     box-sizing: border-box;
-    height: calc(60% - 20px);
+    height: calc(55% - 20px);
     max-width: 100%;
 }
 .un_tier
 {
-    height:calc(40% - 20px);
+    height:calc(45% - 20px);
     max-width: 100%;
 }
 .moitie
