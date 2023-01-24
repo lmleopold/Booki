@@ -24,5 +24,5 @@ Checkout the URL to take a look : https://lmleopold.github.io/Booki/
 ***
 A list of technologies used within the project:
 A list of technologies used within the project:
-* ![HTML5]( https://cdn-icons-png.flaticon.com/128/38/38497.png): HTML5 
-* ![CSS3]( https://cdn-icons-png.flaticon.com/128/732/732007.png): CSS3
+* ![HTML5]( https://cdn-icons-png.flaticon.com/128/732/732007.png) 
+* ![CSS3]( https://developer.mozilla.org/fr/docs/Web/CSS)
