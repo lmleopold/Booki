@@ -18,7 +18,7 @@ Checkout here for more details about the technical specifications and mockups of
 
 Checkout the URL to take a look : https://lmleopold.github.io/Booki/
 ### Screenshot
-![Sreenshot of the Home Page]( ./images/homePage.png)
+![Sreenshot of the Home Page]( ./images/homePageScreenshot.png)
 ## Technologies
 ***
 A list of technologies used within the project:
