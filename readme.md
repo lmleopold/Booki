@@ -13,8 +13,9 @@ Booki is a vacation booking company: the objective of the project is to build a 
 The code had to be made of pure HTML5 and CSS3 without any framework (bootstrap, tailwind…) nor preprocessor (sass).
 
 Checkout here for more details about the technical specifications and mockups of this project : 
-* [technical_sepcifications]( ./ specifications_techniques/DW+P2+-+Specifications+techniques+et+fonctionnelles.pdf)
-* [mockups]( ./ specifications_techniques/maquettes/)
+* [technical_sepcifications]( specifications_techniques/DW+P2+-+Specifications+techniques+et+fonctionnelles.pdf)
+* [mockup_desktop] (specifications_techniques/maquettes/Desktop - 1.png)
+* [mockup_mobile] (specifications_techniques/maquettes/iPhone 8 - 1.png)
 
 Checkout the URL to take a look : https://lmleopold.github.io/Booki/
 ### Screenshot
