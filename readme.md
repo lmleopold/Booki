@@ -23,6 +23,5 @@ Checkout the URL to take a look : https://lmleopold.github.io/Booki/
 ## Technologies
 ***
 A list of technologies used within the project:
-A list of technologies used within the project:
 * ![HTML5]( https://developer.mozilla.org/fr/docs/Glossary/HTML5) 
 * ![CSS3]( https://developer.mozilla.org/fr/docs/Web/CSS)
